@@ -10,7 +10,7 @@ function navbar() {
   return (
     <div className='nav_container'>
         <section className='nav_item_right'>
-       <img src="/vite.svg" alt="logo" className='logo'/> 
+       <img src="./vite.svg" alt="logo" className='logo'/> 
         <h2 className='nav_tite'>City hospital</h2>
         </section>
         <section className={active ? 'nav_item_left_active':'nav_item_left'}>
