@@ -1,0 +1,107 @@
+.nav_container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 1;
+    gap:20%;
+    height: 7vh;
+    width: 100%;
+    border-bottom:1px solid lightgrey ;
+    margin: 0;
+}
+.nav_item_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    background-color:white ;
+    height: 100%;
+    width:40%;
+    align-items: center;
+    
+}
+.logo{
+    padding-left: 10px;
+    height: 4vh;
+}
+.nav_tite{
+   /* font-size: clamp(15px,2vw,100px); */
+   font-weight: 700;
+}
+.nav_item_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    gap: 2px;
+    background-color:white ;
+    height: 100%;
+    width:40%;
+    align-items: center;
+}
+.link{
+    /* font-size: clamp(12px,2vw,15px); */
+    font-weight:600;
+    text-decoration: none;
+    color: #111;
+    
+}
+.nav_menu{
+    display: none;
+}
+.link:hover{
+    background-color: aliceblue;
+}
+
+@media (max-width:768px) {
+     .nav_item_left_active{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30vh;
+        width: 250px;
+        position: absolute;
+        top: 95px;
+        right: 0;
+        border-radius: 5px;
+        border: 5px solid lightblue;
+        transition: all 0.4s ease-in;
+    }
+    .nav_item_left{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 0vh;
+        width: 0px;
+        position: absolute;
+        top: 95px;
+        z-index: 10;
+        right: -400px;
+        border-radius: 5px;
+        border: 0px solid lightblue;
+        transition: all 0.4s ease-in;
+        overflow: hidden;
+    }
+
+    .nav_item_right{
+        display: flex;
+        width: 60%;
+        gap: 15px;
+    }
+    .nav_container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .nav_menu{
+        display: block;
+        height:4vh;
+    }
+    .link{
+        padding-left: 10px;
+    }
+}
