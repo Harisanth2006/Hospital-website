@@ -22,7 +22,7 @@ function home() {
         </div>
 
         <div className="home_banner_img">
-            <img src="./banner.png" alt="banner" className='banner_img'/>
+            <img src="/Hospital-website/banner.png" alt="banner" className='banner_img'/>
         </div>
       </section>
       {/* home department section */}

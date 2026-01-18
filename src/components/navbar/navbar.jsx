@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import './navbar.css'
 import menu from "../../assets/logos/menu.svg"
+import { NavLink } from 'react-router-dom'
 function navbar() {
     const [active,setActive]= useState(false);
     const toggle= ()=>{
@@ -14,9 +15,9 @@ function navbar() {
         <h2 className='nav_tite'>City hospital</h2>
         </section>
         <section className={active ? 'nav_item_left_active':'nav_item_left'}>
-        <a href="" className='link'>Home</a>
-        <a href="" className='link'>about</a>
-        <a href="" className='link'>Deparments</a>
+        <NavLink to="/"end className={({isActive})=>(isActive ? 'link_active':'link')}>Home</NavLink>
+        <NavLink to="/about" className={({isActive})=>(isActive ? 'link_active':'link')}>about</NavLink>
+        <NavLink to="/departments" className={({isActive})=>(isActive ? 'link_active':'link')}>Deparments</NavLink>
         <a href="" className='link'>Doctors</a>
         <a href="" className='link'>contact</a>
         </section>

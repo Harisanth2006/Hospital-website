@@ -1,0 +1,147 @@
+.departments_container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    /* margin: 15px; */
+}
+.departments_hero_section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10%;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-left: 10px;
+}
+.depatments_hero_content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.departments_hero_title{
+    font-size: clamp(2rem,4vw,5rem);
+}
+.departments_hero_title_c1{
+    color: #000;
+}
+.departments_hero_title_c2 , .departments_hero_title_c3{
+    color: #2563eb;
+}
+.departments_hero_description{
+    font-size: clamp(1rem,2.5vw,1.5rem);
+    font-weight: 600;
+    color: #555;
+    margin-top: 1rem;
+}
+.departments_hero_img_conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+}
+.department_hero_img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.departments_dept_card_conatiner{
+    display: flex;
+    flex-direction: column;
+    /* padding: 25px; */
+     margin-top: 25px;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #EEF3F8;
+    width: 100%;
+}
+.departments_dept_card_title{
+    margin-top: 3rem;
+    font-size: clamp(2rem,4vw,5rem);
+    width: 100%;
+}
+.deparments_cards_dept{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    margin-top:2rem;
+    gap: 2rem;
+    justify-items: center;
+    margin-bottom: 4rem;
+}
+.department_contact_us{
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.department_contact_us_conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:70%;
+    gap: 25px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: rgba(48, 168, 243, 0.227);
+}
+.department_contact_us_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+.department_contact_us_title{
+    font-size: clamp(1rem,2vw,3rem);
+}
+.department_contact_us_description{
+    font-size: clamp(0.5rem,1vw,1.5rem);
+    font-weight: 500;
+    color: #555;
+}
+.department_contact_us_button{
+    font-size: clamp(0.7rem,1vw,1.5rem);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 600;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: min-content;
+}
+@media (max-width:768px) {
+    .departments_hero_img_conatiner{
+        display: none;
+    }
+    .depatments_hero_content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    }
+    .deparments_cards_dept{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:2rem;
+    column-gap: 2rem;
+    justify-items: center;
+    }
+    .departments_dept_card_conatiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .department_contact_us_conatiner{
+        width: 90%;
+    }
+}

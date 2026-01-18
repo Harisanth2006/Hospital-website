@@ -55,6 +55,10 @@
 .link:hover{
     background-color: aliceblue;
 }
+.link_active{
+    color: blue;
+    text-decoration: none;
+}
 
 @media (max-width:768px) {
      .nav_item_left_active{
