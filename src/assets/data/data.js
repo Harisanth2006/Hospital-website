@@ -28,3 +28,41 @@ export const dept_data = [
         description:"Bone health, joint replacement, and sports medicine."
     }
 ]
+
+export const doctor_data =[{
+        name:"Aswin K S",
+        dept:"Cardiology"
+    },
+    {
+        name:"Adith VS",
+        dept:"Orthopedics"
+    },
+    {
+        name:"Sangeerth Murali",
+        dept:"Neurology"
+    },
+    {
+        name:"Jefin Joshy",
+        dept:"Pediatrics"
+    },
+    {
+        name:"Mashood",
+        dept:"Orthopedics"
+    },
+    {
+        name:"Shyam",
+        dept:"Pediatrics"
+    },
+    {
+        name:"Sinan",
+        dept:"Neurology"
+    },
+    {
+        name:"Alen sunny",
+        dept:"Cardiology"
+    },
+    {
+        name:"Jhon doe",
+        dept:"Pediatrics"
+    }
+]

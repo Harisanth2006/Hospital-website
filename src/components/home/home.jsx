@@ -7,6 +7,7 @@ import call_add from "../../assets/logos/add_call.svg"
 import call from "../../assets/logos/call.svg"
 import location from "../../assets/logos/location.svg"
 import mail from "../../assets/logos/mail.svg"
+import {doctor_data} from "../../assets/data/data.js"
 function home() {
   return (
     <div className='home_conatiner'>
@@ -41,9 +42,10 @@ function home() {
         <h1 className='home_doctors_title'>Meet Our Specialists</h1>
         <p className='home_doctors_description'>Meet our team of experienced and dedicated healthcare professionals</p>
         <div className="home_cards_doctor">
+            {/* <Card_doctor/>
             <Card_doctor/>
-            <Card_doctor/>
-            <Card_doctor/>
+            <Card_doctor/> */
+            doctor_data.map((e)=>(<Card_doctor name={e.name} dept={e.dept}/>))}
         </div>
       </section>
       {/* home contact section */}

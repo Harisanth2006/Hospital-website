@@ -136,7 +136,6 @@ padding-top: 30px;
     flex-direction: row;
     gap:25px;
     overflow: scroll;
-    justify-content: center;
 }
 .home_cards_doctor::-webkit-scrollbar{
     display: none;

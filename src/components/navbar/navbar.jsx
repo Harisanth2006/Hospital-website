@@ -18,7 +18,8 @@ function navbar() {
         <NavLink to="/"end className={({isActive})=>(isActive ? 'link_active':'link')}>Home</NavLink>
         <NavLink to="/about" className={({isActive})=>(isActive ? 'link_active':'link')}>about</NavLink>
         <NavLink to="/departments" className={({isActive})=>(isActive ? 'link_active':'link')}>Deparments</NavLink>
-        <a href="" className='link'>Doctors</a>
+        <NavLink to="/doctor" className={({isActive})=>(isActive ? 'link_active':'link')}>Doctor</NavLink>
+        {/* <a href="" className='link'>Doctors</a> */}
         <a href="" className='link'>contact</a>
         </section>
         <img src={menu} alt="menu" className='nav_menu' onClick={toggle}/>
