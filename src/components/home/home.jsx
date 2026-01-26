@@ -59,7 +59,7 @@ function home() {
       <section className='home_footer'>
         <div className="footer_hospital_info">
           <h2 className='footer_hospital_title'><img src="./vite.svg" alt="logo" className='footer_hospital_logo'/>City General Hospital</h2>
-          <p className='footer_hospital_description'>providing quality healthcare.We are committed to patient safety and excellence</p>
+          <p className='footer_hospital_description'>providing quality healthcare.We are committed to patient safety and excellence..</p>
         </div>
 
         <div className="footer_contact_us">

@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route} from 'react-router-dom'
+import { HashRouter,Routes,Route} from 'react-router-dom'
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,7 +12,7 @@ function App() {
   
 
   return (
-    <BrowserRouter basename='/Hospital-website'>
+    <HashRouter>
     <div className='app_conatiner'>
       <Navbar/>
       <Routes>
@@ -26,7 +26,7 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
