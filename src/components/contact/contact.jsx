@@ -43,7 +43,7 @@ function contact() {
           <p className='contact_location_description'>Visit at our Hospital when you need.. avilable for you 24/7</p>
           <div className="contact_location_gmap_conatiner">
             {/* <iframe src="" frameborder="" className='contact_location_gmap'></iframe> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d856.7802495573395!2d76.01551386117045!3d11.814172493881772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5dc203cf06821%3A0xc9ca2c53e0c6693e!2sVincent%20Giri%20Hospital!5e0!3m2!1sen!2sin!4v1769421379360!5m2!1sen!2sin" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='contact_location_gmap'></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d856.7802495573395!2d76.01551386117045!3d11.814172493881772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5dc203cf06821%3A0xc9ca2c53e0c6693e!2sVincent%20Giri%20Hospital!5e0!3m2!1sen!2sin!4v1769421379360!5m2!1sen!2sin" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='contact_location_gmap' title='Hosital location on google map'></iframe>
             <img src={address} alt="location_logo" className='contact_location_address_logo'/>
             <address className='contact_location_address'>
               <span className='contact_location_address_title'>City General Hospital</span>
