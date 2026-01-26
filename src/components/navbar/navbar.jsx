@@ -19,8 +19,7 @@ function navbar() {
         <NavLink to="/about" className={({isActive})=>(isActive ? 'link_active':'link')}>about</NavLink>
         <NavLink to="/departments" className={({isActive})=>(isActive ? 'link_active':'link')}>Deparments</NavLink>
         <NavLink to="/doctor" className={({isActive})=>(isActive ? 'link_active':'link')}>Doctor</NavLink>
-        {/* <a href="" className='link'>Doctors</a> */}
-        <a href="" className='link'>contact</a>
+        <NavLink to="/contact" className={({isActive})=>(isActive ? 'link_active':'link')}>contact</NavLink>
         </section>
         <img src={menu} alt="menu" className='nav_menu' onClick={toggle}/>
     </div>

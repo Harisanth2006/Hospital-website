@@ -7,6 +7,7 @@ import Home from './components/home/home'
 import About from './components/about/about'
 import Departments from './components/departments/departments'
 import Doctor from './components/doctor/doctor'
+import Contact from './components/contact/contact'
 function App() {
   
 
@@ -22,6 +23,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/departments' element={<Departments/>}/>
       <Route path='/doctor' element={<Doctor/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       </Routes>
     </div>
     </BrowserRouter>
