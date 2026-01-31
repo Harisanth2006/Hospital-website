@@ -1,0 +1,151 @@
+.modal_doctor_overlay{
+ display: none;
+} 
+.modal_doctor_overlay_active{
+   background-color: transparent;
+   backdrop-filter: blur(0.5rem); 
+   position: fixed; 
+   height: 100vh;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.modal_doctor_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: auto;
+    max-height: 90dvh;
+    background-color: #EEF3F8;
+    border-radius: 2rem;
+    position: relative;
+    padding: 2rem;
+    border:0.5px solid #393e49b4;
+}
+.modal_doctor_cancel_btn{
+    position:absolute;
+    top: 5px;
+    right: 10px;
+}
+.modal_doctor_hero_section{
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:0.5rem;
+    padding: 1rem;
+    align-items: flex-start;
+}   
+.modal_doctor_hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:0.25rem;
+    border: 1px solid #63646764;
+    width: 100%;
+    padding-left: 1rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.197);
+} 
+.modal_doctor_hero_img_conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%;
+    max-width: fit-content;
+    min-width: 220px;
+    height: auto;
+    width: 100%;
+}
+.modal_doctor_hero_img{
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.modal_doctor_hero_title{
+    font-size: clamp(1rem,4vw,3rem);
+    font-weight: 700;
+}
+.modal_doctor_hero_dept{
+    font-size: clamp(0.5rem,4vw,1.2rem);
+    font-weight: 500;
+    color: #2563eb;
+}
+.modal_doctor_hero_education{
+     font-size: clamp(0.5rem,4vw,1.2rem);
+    font-weight: 500;
+    color: #393e49b4;
+}
+.modal_doctor_about_title{
+    font-size: clamp(1rem,3vw,2rem);
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 1px solid #686a6d8a;
+    padding-bottom:0.5rem;
+}
+.modal_doctor_about_description{
+    font-size: clamp(0.5rem,3vw,1rem);
+    font-weight:500;
+    color: #595a5bd6;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.197);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.3rem;
+}
+.modal_doctor_footer_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1rem;
+}
+.modal_doctor_footer_card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.197);
+    padding: 1rem;
+    min-width: 40%;
+    border-radius: 1rem;
+}
+.modal_doctor_footer_title{
+    font-size: clamp(1rem,3vw,2rem);
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 1px solid #686a6d41;
+    padding-bottom:0.25rem;
+}
+.modal_doctor_footer_li{
+     font-size: clamp(0.5rem,3vw,1rem);
+    font-weight:500;
+    color: #595a5bd6;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.modal_doctor_cancel_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0.25rem;
+    font-size: clamp(1rem,2.5vw,1.5rem);
+}
+.modal_doctor_cancel_btn:hover{
+    color: red;
+}
+@media (max-width:768px){
+    .modal_doctor_hero_section{
+        display: flex;
+        flex-direction: column;
+    }
+}
