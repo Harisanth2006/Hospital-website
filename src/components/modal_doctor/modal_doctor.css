@@ -21,7 +21,7 @@
     align-items: center;
     width: 65%;
     height: auto;
-    max-height: 90dvh;
+    max-height: 95dvh;
     background-color: #EEF3F8;
     border-radius: 2rem;
     position: relative;
@@ -34,7 +34,7 @@
     right: 10px;
 }
 .modal_doctor_hero_section{
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
     display: flex;
     flex-direction: row;
     width: 100%;
