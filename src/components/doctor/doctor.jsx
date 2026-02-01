@@ -22,7 +22,10 @@ function doctor() {
         </div>
       </section>
        <div className="doctor_list">
-            {doctors.map((e)=>(<Card_doctor name={e.name} dept={e.dept}/>))}
+            {
+               doctor_data.map((e)=>(<Card_doctor img={e.img} name={e.name} dept={e.dept} education={e.education} experince={e.experience}
+            language={e.language} about={e.about} day={e.availability.days} time={e.availability.time} available={e.availability.today} variant="large"/>))
+            }
         </div>
     </div>
   )

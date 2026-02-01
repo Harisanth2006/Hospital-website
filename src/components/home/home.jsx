@@ -32,7 +32,7 @@ function home() {
           <p className='home_dept_description'>comprehensive care across specialized fields to ensure your well-being</p>
           <div className="home_cards_dept">
           {
-            dept_data.map((e)=>(<Card_dept logo={e.logo} title={e.title} description={e.description}/>))          
+            dept_data.map((e)=>(<Card_dept logo={e.logo} title={e.title} description={e.description} about={e.about} services={e.service}/>))          
           }
           
         </div>
@@ -45,7 +45,8 @@ function home() {
             {/* <Card_doctor/>
             <Card_doctor/>
             <Card_doctor/> */
-            doctor_data.map((e)=>(<Card_doctor name={e.name} dept={e.dept}/>))}
+            doctor_data.map((e)=>(<Card_doctor img={e.img} name={e.name} dept={e.dept} education={e.education} experince={e.experience}
+            language={e.language} about={e.about} day={e.availability.days} time={e.availability.time} available={e.availability.today} variant="large"/>))}
         </div>
       </section>
       {/* home contact section */}

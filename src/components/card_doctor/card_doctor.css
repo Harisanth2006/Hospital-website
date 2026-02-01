@@ -1,6 +1,6 @@
-.card_doctor_container{
+.card_doctor_container_large{
    background-color:#ffff;
-    height: fit-content;
+    /* height: fit-content; */
     width: 10%;
     min-width: 250px;
     border-radius: 0.5rem;
@@ -28,4 +28,33 @@
     padding-top: 5px;
     font-weight: 500;
     color: #2563eb;
+}
+.card_doctor_container_small{
+   background-color:#ffff;
+    height: fit-content;
+    width: fit-content;
+    min-width: 150px;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    border: 0.75px solid lightgrey;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.297);
+}
+.card_doctor_container_small_subConatiner{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.card_doctor_small_content{
+    text-align: left;
+    width: 70%;
+}
+.doctor_name_small{
+    font-size: clamp(0.5rem,3vw,0.9rem);
+    margin-top: 0.25rem;
+}
+.doctor_specialty_small{
+     font-size: clamp(0.2rem,2vw,0.7rem);
+     color: #2563eb;
+     margin-bottom: 0.25rem;
 }

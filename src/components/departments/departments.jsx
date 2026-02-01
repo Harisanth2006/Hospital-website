@@ -24,7 +24,7 @@ function departments() {
         <h1 className='departments_dept_card_title'>Our Departments</h1>
          <div className="deparments_cards_dept">
           {
-            dept_data.map((e)=>(<Card_dept logo={e.logo} title={e.title} description={e.description}/>))          
+            dept_data.map((e)=>(<Card_dept logo={e.logo} title={e.title} description={e.description} about={e.about} services={e.service}/>))          
           }
         </div>
       </section>
