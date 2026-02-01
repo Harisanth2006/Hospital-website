@@ -36,7 +36,8 @@ function modal_dept({open,close,logo,title,about,service}) {
             <h2 className='modal_dept_doctors_title'>Available Doctors</h2>
             <div className="modal_cards_dept">
              {
-             doctor.map((e)=>(<Card_doctor name={e.name} dept={e.dept} variant="small"/>))          
+             doctor.map((e)=>(<Card_doctor img={e.img} name={e.name} dept={e.dept} education={e.education} experince={e.experience}
+            language={e.language} about={e.about} day={e.availability.days} time={e.availability.time} available={e.availability.today} variant="small"/>))          
              }   
             </div>
         </section>
